@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "113882",
+    "ThreadId": "34314",
+    "Html": "Hi, <br>\r\n<br>\r\nIt´s possible wrap unmamaged C++ classes from dll using&nbsp; __declspec(dllexport)? Make something like this:<br>\r\n<span><span>\r\n<pre>http://www.codeguru.com/cpp/cpp/cpp_managed/interop/article.php/c6867/<br><br>Thanks</pre>\r\n</span></span><br>\r\n",
+    "PostedDate": "2008-08-26T10:58:30.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

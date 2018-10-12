@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "1. Install tool from msi",
+    "LastUpdatedDate": "2017-11-27T18:42:25.817-08:00",
+    "PlannedForRelease": "PInvoke Interop Assistant",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2008-06-24T23:52:25.723-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Crash on opening sigexplib.dll (generic)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1556
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "mmm.. strange system...\r\n\r\nanyway:\r\n1) install from scratch (release msi)\r\n2) open tool\r\n3) click File->Open or ctrl+O\r\n4) select sigexplib.dll from program folder and click OK\r\n5) go to \"Transformer`1\" node item in the left tree.\r\n\r\nApplication is disappeared without any message",
+      "PostedDate": "2008-06-24T23:59:55.827-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thanks Oregu for reporting this issue! We'll look into it and get it fix in this release.",
+      "PostedDate": "2008-08-25T22:47:52.39-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-08-25T22:48:32.017-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:53:17.853-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-11-27T18:42:25.817-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

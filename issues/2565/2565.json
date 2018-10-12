@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Many of our interfaces use IStream to interchange data. \nNow MIDL generates a copy of the IStream interface in every TLB - which are translated into a different RCWs, so you can't use the IStream provided by one interface to pass the data to another interface defined in a different TLB since the interfaces RCWs refer to different IStream RCWs. \nAlso this makes it impossible to generate a generic Stream adapter since this would need to derive from all possible IStream definitions to work.\nWe currently solve this by disassembling the interop and replacing all references to an IStream with the System.Runtime.InteropServices.ComTypes.IStream, so this would be a perfect candidate to make it into TlbImp!\n \nSince this problem applies to all types defined in System.Runtime.InteropServices.ComTypes they all should be translated properly by TlbImp.",
+    "LastUpdatedDate": "2013-06-11T10:12:57.133-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2008-11-11T01:33:26.803-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "TlbImp: Replace well known interfaces like IStream with their existing managed definition",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 5,
+    "Id": 2565
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thank you for your suggestion. This issue is addressed by the customization feature within the latest release of TlbImp. Please check out the ResolveTo action. Thanks!",
+      "PostedDate": "2009-03-12T22:49:49.983-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-08-21T05:52:44.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:53:15.997-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-06-11T10:12:57.133-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

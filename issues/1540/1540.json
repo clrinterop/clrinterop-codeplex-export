@@ -1,0 +1,71 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "One of the prerequisites is .NET Framework 2.0 (x86). When I run setup.exe, the installer does not detect that .NET 2.0 is already installed and wants to download and install it.",
+    "LastUpdatedDate": "2017-11-27T18:42:15.803-08:00",
+    "PlannedForRelease": "PInvoke Interop Assistant",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2008-06-24T01:57:30.43-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "setup.exe does not detect installed .NET 2.0 correctly",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1540
+  },
+  "FileAttachments": [
+    {
+      "FileId": 688,
+      "FileName": "DotNet20Prerequisite.png",
+      "DownloadUrl": ".\\688"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Thanks Tommy Carlier for finding this issue! We will look into it as soon as possible.",
+      "PostedDate": "2008-08-25T22:46:43.31-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-08-25T22:46:44.45-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-08-25T22:51:46.63-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:53:18.007-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-11-27T18:42:15.803-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

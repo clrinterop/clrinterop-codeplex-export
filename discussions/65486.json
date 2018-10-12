@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "223000",
+    "ThreadId": "65486",
+    "Html": "<p>Hello,</p>\r\n<p>&nbsp; We are developing controls in .Net (C# mostly).&nbsp; Some of our customers still use COM environments for their application development.&nbsp; We would like to go to Visual Studio 2008.&nbsp; We cannot because we loose ATL support and therefore cannot bring our C++ OCX code into 2008.&nbsp; Do you have a tool (or know of one) that will allow us to create an ActiveX/OCX component from a .Net component?</p>\r\n<p>&nbsp;</p>\r\n<p>Pat O</p>",
+    "PostedDate": "2009-08-13T08:57:32.697-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230527",
+    "ThreadId": "65486",
+    "Html": "<p>Not quite sure what's your need.</p>\r\n<p>but there is a tool called tlbexp.exe, which can convert managed assembly into type library. may meet your requirement.</p>",
+    "PostedDate": "2009-09-02T23:26:43.13-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "232483",
+    "ThreadId": "65486",
+    "Html": "<p>I m familiar with tlbexp. &nbsp;I am looking for a full OCX. &nbsp;I found a toolkit from Microsoft call <a href=\"http://msdn.microsoft.com/en-us/vbasic/bb419144.aspx\">Interop FormsToolkit</a>. &nbsp;It takes a VB .Net Form and makes it work with VB6. &nbsp;I was hoping for better COM/OCX support from .Net.</p>\r\n<p>&nbsp;</p>\r\n<p>Pat O</p>",
+    "PostedDate": "2009-09-08T19:12:28.743-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "234135",
+    "ThreadId": "65486",
+    "Html": "<p>Hi Pat,</p>\r\n<p>Can you describe the scenario with more details? I'm quite interested in the gap between tlbexp and the tool you need.</p>\r\n<p>Thanks,</p>\r\n<p>Yongtai</p>",
+    "PostedDate": "2009-09-13T18:33:53.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

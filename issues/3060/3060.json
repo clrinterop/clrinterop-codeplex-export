@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I keep getting text like this when I search for API calls:\n \n Error generating expression: Value GetWindowsDirectoryW is not resolved\n \nIt happens a lot. How come??\n \nDavid",
+    "LastUpdatedDate": "2013-02-21T15:53:15.503-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2009-01-17T20:31:32.053-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Errors for API's",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3060
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

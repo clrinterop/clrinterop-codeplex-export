@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1321826",
+    "ThreadId": "572012",
+    "Html": "Hi\r<br />\n<br />\nI am responsible for developing a COM Server in C# that is dynamically registered by the client passing a clsid as a command line parameter.\r<br />\n<br />\nAll of this is working fine except that my COM Server is not closing down after the client has called Release() on its COM object.\r<br />\n<br />\nIdeally, I would like to implement AddRef and Release to terminate my message pump in the COM Server when the reference count goes to zero...\r<br />\n...or discover that there is a better way of doing this to make sure the final Release() call turns out the lights.\r<br />\n<br />\nCan you suggest anything?\r<br />\nThanks\r<br />\nIan <br />\n",
+    "PostedDate": "2014-11-13T08:45:18.707-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

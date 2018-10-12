@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "142374",
+    "ThreadId": "42837",
+    "Html": "I'm trying to call the GetLogicalProcessorInformation from C# using the generated code from the P/Invoke Interop Assistant. The code compiles just fine, however at runtime I receive the following error:<br>\r\n<br>\r\n<p>'ExtendedEnvironment.GetLogicalProcessorInformation()' threw an exception of type 'System.TypeLoadException'</p>\r\n<p>base {System.SystemException}: {&quot;Could not load type 'Campari.Software.InteropServices.Anonymous_cfba373b_d315_405c_b345_eabbe699bc66' from assembly 'Campari.Software.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d2a30f2c3b499e74' because it contains an object field at offset 0 that is incorrectly aligned or overlapped by a non-object field.&quot;:&quot;Campari.Software.InteropServices.Anonymous_cfba373b_d315_405c_b345_eabbe699bc66&quot;}</p>\r\n<p>Message: &quot;Could not load type 'Campari.Software.InteropServices.Anonymous_cfba373b_d315_405c_b345_eabbe699bc66' from assembly 'Campari.Software.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d2a30f2c3b499e74' because it contains an object field at offset 0 that is incorrectly aligned or overlapped by a non-object field.&quot;</p>\r\n<p>TypeName: &quot;Campari.Software.InteropServices.Anonymous_cfba373b_d315_405c_b345_eabbe699bc66&quot;</p>\r\n",
+    "PostedDate": "2008-12-22T08:31:44.103-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "158611",
+    "ThreadId": "42837",
+    "Html": "I'm having the same problem. Did you ever find more information about the reason behind this error?\r\n",
+    "PostedDate": "2009-02-17T11:45:12.707-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "173356",
+    "ThreadId": "42837",
+    "Html": "It is very like that the struct you use has the misaligned in the layout.<br>\r\nThe reason is Signal tool does not support converting &quot;Native&quot; to &quot;Manage&quot; in the x64, I just check the &quot;GetLogicalProcessorInformation &quot; and turns out this API is only available on x64. So you might use the struct from the output of the tool, which is not applied on x64. for the convertion rules<br>\r\ne.g.  INT_PTR -&gt; uint      (x86 - 32 bit)<br>\r\n        INT_PTR -&gt; uint64 (x64 - 64 bit)<br>\r\n",
+    "PostedDate": "2009-03-30T00:29:21.643-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

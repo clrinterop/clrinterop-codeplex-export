@@ -1,0 +1,22 @@
+--- C:\DOCUME~1\SSHAND~1.FIB\LOCALS~1\Temp\ConvCommon.cs-revBASE.svn005.tmp.cs	Thu Oct 30 13:08:56 2008
++++ C:\tlbimp2\clrinterop\TlbImp\ConvCommon.cs	Thu Oct 30 13:02:03 2008
+@@ -1653,6 +1653,19 @@
+                     {
+                         string fieldName = type.GetDocumentation(var.memid);
+ 
++                        // Removing prefixes from enumeration fields. Converting
++                        // Enum.Enum_ConstantField to Enum.ConstantField.
++                        if(
++                            convType == ConvType.Enum && 
++                            info.Settings.m_isVersion2)
++                        {
++                            string prefix = typeBuilder.Name + "_";
++                            if (fieldName.StartsWith(prefix))
++                            {
++                                fieldName = fieldName.Substring(prefix.Length);
++                            }
++                        }
++
+                         // We don't want the same conversion rules as Field for VT_BOOL and VT_ARRAY, so use Element instead
+                         // Basically Element is the same as Field except that it doesn't have special rules for VT_BOOL/VT_ARRAY
+                         TypeConverter typeConverter = new TypeConverter(info, type, var.elemdescVar.tdesc, ConversionType.Element);

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "currently we do not store the IL stubs anywhere. The task is to enable user to store/load the IL stub contents.",
+    "LastUpdatedDate": "2013-02-21T15:53:14.403-08:00",
+    "PlannedForRelease": "IL Stub Diagnostics Tool",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2009-10-21T23:28:23.187-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IL Stub Diagnostics: Serialize the events to XML file",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 0,
+    "Id": 4540
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

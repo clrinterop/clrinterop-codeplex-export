@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When converting a GUID, the interop assistant thinks that Data4 should be a string:\n \n[System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential, CharSet=System.Runtime.InteropServices.CharSet.Ansi)]\npublic struct GUID\n{\n    /// unsigned int\n    public uint Data1;\n    \n    /// unsigned short\n    public ushort Data2;\n    \n    /// unsigned short\n    public ushort Data3;\n    \n    /// unsigned char[8]\n    [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.ByValTStr, SizeConst=8)]\n    public string Data4;\n}\n \nIt’s really an array of bytes, and even calling System.Text.Encoding.Unicode.GetString(bytes) or System.Text.Encoding.ASCII.GetString(bytes) didn’t create the correct string. Changing the marshalling definition to an array of bytes worked:\n \n            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 8)] \n            internal byte[] Data4;\n \n \nThis came from generating the definition for WINTRUST_BLOB_INFO from the SDK (by pasting it in.)",
+    "LastUpdatedDate": "2013-02-21T15:53:16.523-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2008-10-13T10:55:38.137-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "'Data4' section of GUID incorrectly generated as a string",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2453
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Should be this whole structure converted to System.Guid?",
+      "PostedDate": "2008-11-04T17:07:58.5-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yes it should.  The tool attempts to map a set of native types into the corresponding managed type.  It looks like GUID slipped through in this case.  ",
+      "PostedDate": "2008-11-05T08:15:10.667-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yes.  The intention of this part of the tool is to not display a native type when there is a better equivalent managed type.  \r\n\r\n",
+      "PostedDate": "2008-11-06T08:21:58.947-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-01-06T23:09:57.04-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:53:16.523-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

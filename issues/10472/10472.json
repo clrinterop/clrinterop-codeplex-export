@@ -1,0 +1,71 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In  \"%ProgramFiles(x86)%\\InteropSignatureToolkit\\\" there is a shortcut called \"PInvoke Signature Toolkit.lnk\" that links to winsiggen.exe. This is where the start menut shortcut points to. It does not have the proper icon. Running winsiggen.exe starts it up just fine. Is there a reason for this shortcut with the wrong icon?",
+    "LastUpdatedDate": "2013-02-21T15:53:13.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2012-09-07T06:55:39.78-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Why is there a shortcut to winsiggen.exe in \"%ProgramFiles(x86)%\\InteropSignatureToolkit\\\"",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10472
+  },
+  "FileAttachments": [
+    {
+      "FileId": 3410,
+      "FileName": "PInvokeGeneratorSetup.vdproj",
+      "DownloadUrl": ".\\3410"
+    },
+    {
+      "FileId": 3411,
+      "FileName": "PInvokeGeneratorSetup.vdproj.diff",
+      "DownloadUrl": ".\\3411"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Here is a fixed setup file.",
+      "PostedDate": "2012-09-07T17:28:56.083-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2012-09-07T17:29:21.243-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "And here is the same file in diff format",
+      "PostedDate": "2012-09-07T17:29:22.693-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:53:13.02-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

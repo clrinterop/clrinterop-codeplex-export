@@ -1,0 +1,408 @@
+Index: Installer/PInvokeGeneratorSetup.vdproj
+===================================================================
+--- Installer/PInvokeGeneratorSetup.vdproj	(revision 79770)
++++ Installer/PInvokeGeneratorSetup.vdproj	(working copy)
+@@ -15,112 +15,88 @@
+     {
+         "Entry"
+         {
+-        "MsmKey" = "8:_08FDB227F21E49838C11807562631D50"
+-        "OwnerKey" = "8:_UNDEFINED"
++        "MsmKey" = "8:_4A0FBCC781202DB232E4263AE3BA95DD"
++        "OwnerKey" = "8:_EB1D57C94724469E98E7204196CAEB02"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+-        "MsmKey" = "8:_12D0714A698433ED24476E823124F6A6"
+-        "OwnerKey" = "8:_DAC93A1C99FC17A251E14532126DE84F"
++        "MsmKey" = "8:_78E64DA816ADC66E04313A77646B7EC4"
++        "OwnerKey" = "8:_8C6BB378E8DF4A6B9D5006DEF14172CA"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+-        "MsmKey" = "8:_12D0714A698433ED24476E823124F6A6"
+-        "OwnerKey" = "8:_8C1BC6F0B71E44818B6364A8F02AAD6D"
++        "MsmKey" = "8:_78E64DA816ADC66E04313A77646B7EC4"
++        "OwnerKey" = "8:_AAEAC9A9A124DF376C2EF5F5144FE06B"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+-        "MsmKey" = "8:_8C1BC6F0B71E44818B6364A8F02AAD6D"
+-        "OwnerKey" = "8:_UNDEFINED"
++        "MsmKey" = "8:_7A9BDD2C8F02F696461E9E5A30CE7370"
++        "OwnerKey" = "8:_AAEAC9A9A124DF376C2EF5F5144FE06B"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+-        "MsmKey" = "8:_A2EBFC2356604AA18FECDBADDE34BF0F"
+-        "OwnerKey" = "8:_UNDEFINED"
++        "MsmKey" = "8:_7A9BDD2C8F02F696461E9E5A30CE7370"
++        "OwnerKey" = "8:_8C6BB378E8DF4A6B9D5006DEF14172CA"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+-        "MsmKey" = "8:_A6B326298842E5218C7A4973758AEB50"
+-        "OwnerKey" = "8:_A2EBFC2356604AA18FECDBADDE34BF0F"
++        "MsmKey" = "8:_8C6BB378E8DF4A6B9D5006DEF14172CA"
++        "OwnerKey" = "8:_UNDEFINED"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+-        "MsmKey" = "8:_DAC93A1C99FC17A251E14532126DE84F"
+-        "OwnerKey" = "8:_8C1BC6F0B71E44818B6364A8F02AAD6D"
++        "MsmKey" = "8:_AAEAC9A9A124DF376C2EF5F5144FE06B"
++        "OwnerKey" = "8:_8C6BB378E8DF4A6B9D5006DEF14172CA"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+-        "MsmKey" = "8:_FADA93F119C0A336761D8D216D599AFE"
+-        "OwnerKey" = "8:_8C1BC6F0B71E44818B6364A8F02AAD6D"
++        "MsmKey" = "8:_EB1D57C94724469E98E7204196CAEB02"
++        "OwnerKey" = "8:_UNDEFINED"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+-        "MsmKey" = "8:_FBE4DC49D4A7E45D760F6F966944AD0B"
+-        "OwnerKey" = "8:_08FDB227F21E49838C11807562631D50"
+-        "MsmSig" = "8:_UNDEFINED"
+-        }
+-        "Entry"
+-        {
+-        "MsmKey" = "8:_FBE4DC49D4A7E45D760F6F966944AD0B"
+-        "OwnerKey" = "8:_DAC93A1C99FC17A251E14532126DE84F"
+-        "MsmSig" = "8:_UNDEFINED"
+-        }
+-        "Entry"
+-        {
+         "MsmKey" = "8:_UNDEFINED"
+-        "OwnerKey" = "8:_08FDB227F21E49838C11807562631D50"
++        "OwnerKey" = "8:_4A0FBCC781202DB232E4263AE3BA95DD"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+         "MsmKey" = "8:_UNDEFINED"
+-        "OwnerKey" = "8:_A6B326298842E5218C7A4973758AEB50"
++        "OwnerKey" = "8:_8C6BB378E8DF4A6B9D5006DEF14172CA"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+         "MsmKey" = "8:_UNDEFINED"
+-        "OwnerKey" = "8:_DAC93A1C99FC17A251E14532126DE84F"
++        "OwnerKey" = "8:_AAEAC9A9A124DF376C2EF5F5144FE06B"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+         "MsmKey" = "8:_UNDEFINED"
+-        "OwnerKey" = "8:_12D0714A698433ED24476E823124F6A6"
++        "OwnerKey" = "8:_7A9BDD2C8F02F696461E9E5A30CE7370"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+         "MsmKey" = "8:_UNDEFINED"
+-        "OwnerKey" = "8:_FADA93F119C0A336761D8D216D599AFE"
++        "OwnerKey" = "8:_78E64DA816ADC66E04313A77646B7EC4"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+         "Entry"
+         {
+         "MsmKey" = "8:_UNDEFINED"
+-        "OwnerKey" = "8:_FBE4DC49D4A7E45D760F6F966944AD0B"
++        "OwnerKey" = "8:_EB1D57C94724469E98E7204196CAEB02"
+         "MsmSig" = "8:_UNDEFINED"
+         }
+-        "Entry"
+-        {
+-        "MsmKey" = "8:_UNDEFINED"
+-        "OwnerKey" = "8:_A2EBFC2356604AA18FECDBADDE34BF0F"
+-        "MsmSig" = "8:_UNDEFINED"
+-        }
+-        "Entry"
+-        {
+-        "MsmKey" = "8:_UNDEFINED"
+-        "OwnerKey" = "8:_8C1BC6F0B71E44818B6364A8F02AAD6D"
+-        "MsmSig" = "8:_UNDEFINED"
+-        }
+     }
+     "Configurations"
+     {
+@@ -211,20 +187,20 @@
+         }
+         "File"
+         {
+-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_12D0714A698433ED24476E823124F6A6"
++            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4A0FBCC781202DB232E4263AE3BA95DD"
+             {
+             "AssemblyRegister" = "3:1"
+             "AssemblyIsInGAC" = "11:FALSE"
+-            "AssemblyAsmDisplayName" = "8:sigimplib, Version=0.9.0.9, Culture=neutral, processorArchitecture=MSIL"
++            "AssemblyAsmDisplayName" = "8:sigexplib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                 "ScatterAssemblies"
+                 {
+-                    "_12D0714A698433ED24476E823124F6A6"
++                    "_4A0FBCC781202DB232E4263AE3BA95DD"
+                     {
+-                    "Name" = "8:sigimplib.dll"
++                    "Name" = "8:sigexplib.dll"
+                     "Attributes" = "3:512"
+                     }
+                 }
+-            "SourcePath" = "8:sigimplib.dll"
++            "SourcePath" = "8:sigexplib.dll"
+             "TargetName" = "8:"
+             "Tag" = "8:"
+             "Folder" = "8:_2E6B90CAE99243619182A102476CE01D"
+@@ -238,24 +214,24 @@
+             "SharedLegacy" = "11:FALSE"
+             "PackageAs" = "3:1"
+             "Register" = "3:1"
+-            "Exclude" = "11:TRUE"
++            "Exclude" = "11:FALSE"
+             "IsDependency" = "11:TRUE"
+             "IsolateTo" = "8:"
+             }
+-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A6B326298842E5218C7A4973758AEB50"
++            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_78E64DA816ADC66E04313A77646B7EC4"
+             {
+             "AssemblyRegister" = "3:1"
+             "AssemblyIsInGAC" = "11:FALSE"
+-            "AssemblyAsmDisplayName" = "8:sigimplib, Version=0.9.0.9, Culture=neutral, processorArchitecture=MSIL"
++            "AssemblyAsmDisplayName" = "8:sigexplib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                 "ScatterAssemblies"
+                 {
+-                    "_A6B326298842E5218C7A4973758AEB50"
++                    "_78E64DA816ADC66E04313A77646B7EC4"
+                     {
+-                    "Name" = "8:sigimplib.dll"
++                    "Name" = "8:sigexplib.dll"
+                     "Attributes" = "3:512"
+                     }
+                 }
+-            "SourcePath" = "8:sigimplib.dll"
++            "SourcePath" = "8:sigexplib.dll"
+             "TargetName" = "8:"
+             "Tag" = "8:"
+             "Folder" = "8:_2E6B90CAE99243619182A102476CE01D"
+@@ -273,20 +249,20 @@
+             "IsDependency" = "11:TRUE"
+             "IsolateTo" = "8:"
+             }
+-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DAC93A1C99FC17A251E14532126DE84F"
++            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7A9BDD2C8F02F696461E9E5A30CE7370"
+             {
+             "AssemblyRegister" = "3:1"
+             "AssemblyIsInGAC" = "11:FALSE"
+-            "AssemblyAsmDisplayName" = "8:siggenui, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
++            "AssemblyAsmDisplayName" = "8:sigimplib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                 "ScatterAssemblies"
+                 {
+-                    "_DAC93A1C99FC17A251E14532126DE84F"
++                    "_7A9BDD2C8F02F696461E9E5A30CE7370"
+                     {
+-                    "Name" = "8:siggenui.dll"
++                    "Name" = "8:sigimplib.dll"
+                     "Attributes" = "3:512"
+                     }
+                 }
+-            "SourcePath" = "8:siggenui.dll"
++            "SourcePath" = "8:sigimplib.dll"
+             "TargetName" = "8:"
+             "Tag" = "8:"
+             "Folder" = "8:_2E6B90CAE99243619182A102476CE01D"
+@@ -304,20 +280,20 @@
+             "IsDependency" = "11:TRUE"
+             "IsolateTo" = "8:"
+             }
+-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FADA93F119C0A336761D8D216D599AFE"
++            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_AAEAC9A9A124DF376C2EF5F5144FE06B"
+             {
+             "AssemblyRegister" = "3:1"
+             "AssemblyIsInGAC" = "11:FALSE"
+-            "AssemblyAsmDisplayName" = "8:sigexplib, Version=1.0.2832.27916, Culture=neutral, processorArchitecture=MSIL"
++            "AssemblyAsmDisplayName" = "8:siggenui, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                 "ScatterAssemblies"
+                 {
+-                    "_FADA93F119C0A336761D8D216D599AFE"
++                    "_AAEAC9A9A124DF376C2EF5F5144FE06B"
+                     {
+-                    "Name" = "8:sigexplib.dll"
++                    "Name" = "8:siggenui.dll"
+                     "Attributes" = "3:512"
+                     }
+                 }
+-            "SourcePath" = "8:sigexplib.dll"
++            "SourcePath" = "8:siggenui.dll"
+             "TargetName" = "8:"
+             "Tag" = "8:"
+             "Folder" = "8:_2E6B90CAE99243619182A102476CE01D"
+@@ -331,37 +307,6 @@
+             "SharedLegacy" = "11:FALSE"
+             "PackageAs" = "3:1"
+             "Register" = "3:1"
+-            "Exclude" = "11:TRUE"
+-            "IsDependency" = "11:TRUE"
+-            "IsolateTo" = "8:"
+-            }
+-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FBE4DC49D4A7E45D760F6F966944AD0B"
+-            {
+-            "AssemblyRegister" = "3:1"
+-            "AssemblyIsInGAC" = "11:FALSE"
+-            "AssemblyAsmDisplayName" = "8:sigexplib, Version=1.0.2832.27916, Culture=neutral, processorArchitecture=MSIL"
+-                "ScatterAssemblies"
+-                {
+-                    "_FBE4DC49D4A7E45D760F6F966944AD0B"
+-                    {
+-                    "Name" = "8:sigexplib.dll"
+-                    "Attributes" = "3:512"
+-                    }
+-                }
+-            "SourcePath" = "8:sigexplib.dll"
+-            "TargetName" = "8:"
+-            "Tag" = "8:"
+-            "Folder" = "8:_2E6B90CAE99243619182A102476CE01D"
+-            "Condition" = "8:"
+-            "Transitive" = "11:FALSE"
+-            "Vital" = "11:TRUE"
+-            "ReadOnly" = "11:FALSE"
+-            "Hidden" = "11:FALSE"
+-            "System" = "11:FALSE"
+-            "Permanent" = "11:FALSE"
+-            "SharedLegacy" = "11:FALSE"
+-            "PackageAs" = "3:1"
+-            "Register" = "3:1"
+             "Exclude" = "11:FALSE"
+             "IsDependency" = "11:TRUE"
+             "IsolateTo" = "8:"
+@@ -416,13 +361,14 @@
+         "MsiBootstrapper"
+         {
+         "LangId" = "3:1033"
++        "RequiresElevation" = "11:FALSE"
+         }
+         "Product"
+         {
+         "Name" = "8:Microsoft Visual Studio"
+         "ProductName" = "8:InteropSignatureToolkit"
+         "ProductCode" = "8:{51FC2A6C-09A7-4AE7-8EB9-BCD05A2D1099}"
+-        "PackageCode" = "8:{BB39F31F-D918-40A2-8DDD-71A1D2154058}"
++        "PackageCode" = "8:{9F8531BF-3380-478E-A74D-3D0CBC634887}"
+         "UpgradeCode" = "8:{9C70BE03-A4C2-44E6-85EE-95959ECB42F8}"
+         "RestartWWWService" = "11:FALSE"
+         "RemovePreviousVersions" = "11:FALSE"
+@@ -485,32 +431,18 @@
+         }
+         "Shortcut"
+         {
+-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_3BEBE211D39740E6A588D8D484FC7782"
++            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7406A78C7FC8448695A04B9BC104E9B3"
+             {
+-            "Name" = "8:PInvoke Signature Toolkit"
++            "Name" = "8:PInvoke Toolkit"
+             "Arguments" = "8:"
+             "Description" = "8:"
+             "ShowCmd" = "3:1"
+-            "IconIndex" = "3:0"
++            "IconIndex" = "3:32512"
+             "Transitive" = "11:FALSE"
+-            "Target" = "8:_8C1BC6F0B71E44818B6364A8F02AAD6D"
+-            "Folder" = "8:_2E6B90CAE99243619182A102476CE01D"
+-            "WorkingFolder" = "8:_2E6B90CAE99243619182A102476CE01D"
+-            "Icon" = "8:"
+-            "Feature" = "8:"
+-            }
+-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_92AA02DF7DCE4D88B270D96A322264F6"
+-            {
+-            "Name" = "8:PInvoke Signature Toolkit"
+-            "Arguments" = "8:"
+-            "Description" = "8:"
+-            "ShowCmd" = "3:1"
+-            "IconIndex" = "3:0"
+-            "Transitive" = "11:FALSE"
+-            "Target" = "8:_8C1BC6F0B71E44818B6364A8F02AAD6D"
++            "Target" = "8:_8C6BB378E8DF4A6B9D5006DEF14172CA"
+             "Folder" = "8:_12A0A909144D40F08CE6F379396AE5FF"
+             "WorkingFolder" = "8:_2E6B90CAE99243619182A102476CE01D"
+-            "Icon" = "8:"
++            "Icon" = "8:_8C6BB378E8DF4A6B9D5006DEF14172CA"
+             "Feature" = "8:"
+             }
+         }
+@@ -912,36 +844,8 @@
+         }
+         "ProjectOutput"
+         {
+-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_08FDB227F21E49838C11807562631D50"
++            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8C6BB378E8DF4A6B9D5006DEF14172CA"
+             {
+-            "SourcePath" = "8:..\\ManagedToUnmanaged\\ConsoleTool\\obj\\Release\\sigexp.exe"
+-            "TargetName" = "8:"
+-            "Tag" = "8:"
+-            "Folder" = "8:_2E6B90CAE99243619182A102476CE01D"
+-            "Condition" = "8:"
+-            "Transitive" = "11:FALSE"
+-            "Vital" = "11:TRUE"
+-            "ReadOnly" = "11:FALSE"
+-            "Hidden" = "11:FALSE"
+-            "System" = "11:FALSE"
+-            "Permanent" = "11:FALSE"
+-            "SharedLegacy" = "11:FALSE"
+-            "PackageAs" = "3:1"
+-            "Register" = "3:1"
+-            "Exclude" = "11:FALSE"
+-            "IsDependency" = "11:FALSE"
+-            "IsolateTo" = "8:"
+-            "ProjectOutputGroupRegister" = "3:1"
+-            "OutputConfiguration" = "8:"
+-            "OutputGroupCanonicalName" = "8:Built"
+-            "OutputProjectGuid" = "8:{47391AEF-A54F-4971-8B01-10CA3A8AD181}"
+-            "ShowKeyOutput" = "11:TRUE"
+-                "ExcludeFilters"
+-                {
+-                }
+-            }
+-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8C1BC6F0B71E44818B6364A8F02AAD6D"
+-            {
+             "SourcePath" = "8:..\\WindowsToolLauncher\\obj\\Release\\winsiggen.exe"
+             "TargetName" = "8:"
+             "Tag" = "8:"
+@@ -968,9 +872,9 @@
+                 {
+                 }
+             }
+-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A2EBFC2356604AA18FECDBADDE34BF0F"
++            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EB1D57C94724469E98E7204196CAEB02"
+             {
+-            "SourcePath" = "8:..\\UnmanagedToManaged\\ConsoleTool\\obj\\Release\\sigimp.exe"
++            "SourcePath" = "8:..\\ManagedToUnmanaged\\ConsoleTool\\obj\\Release\\sigexp.exe"
+             "TargetName" = "8:"
+             "Tag" = "8:"
+             "Folder" = "8:_2E6B90CAE99243619182A102476CE01D"
+@@ -990,7 +894,7 @@
+             "ProjectOutputGroupRegister" = "3:1"
+             "OutputConfiguration" = "8:"
+             "OutputGroupCanonicalName" = "8:Built"
+-            "OutputProjectGuid" = "8:{02A2D028-228A-4C28-A4FF-6350F1BD2F17}"
++            "OutputProjectGuid" = "8:{47391AEF-A54F-4971-8B01-10CA3A8AD181}"
+             "ShowKeyOutput" = "11:TRUE"
+                 "ExcludeFilters"
+                 {
+@@ -1025,8 +929,5 @@
+                 }
+             }
+         }
+-        "VJSharpPlugin"
+-        {
+-        }
+     }
+ }

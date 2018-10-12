@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "437805",
+    "ThreadId": "211210",
+    "Html": "I'm trying to import an interface with conformant C-Style Arrays:\r\n\r\n<pre>\r\ninterface ITest: IUnknown\r\n{\r\n  HRESULT setBuf([in] long size, [in, size_is(size)] byte* buf);\r\n  HRESULT getBuf([out] long* size, [out, size_is(, *size)] byte** buf);\r\n}\r\n</pre>\r\n\r\nThere is no problem with setBuf(), I've created  ConvertTo() action for tlbimp2\r\n\r\n<pre>\r\n    &lt;Action Name=&quot;ConvertTo&quot;&gt;\r\n      &lt;Parameter Key=&quot;Direction&quot; Value=&quot;[In]&quot; /&gt;\r\n      &lt;Parameter Key=&quot;ByRef&quot; Value=&quot;False&quot; /&gt;\r\n      &lt;Parameter Key=&quot;ManagedType&quot; Value=&quot;LPArray&quot; /&gt;\r\n      &lt;Parameter Key=&quot;MarshalAs&quot; Value=&quot;(default)&quot; /&gt;\r\n      &lt;Parameter Key=&quot;Attributes&quot; Value=&quot;[SizeParamIndexOffset=-1]&quot; /&gt;\r\n    &lt;/Action&gt;\r\n</pre>\r\n\r\nand it's marshalled as\r\n\r\n<pre>\r\npublic virtual extern void setBuf(int size, byte[] buf);\r\n</pre>\r\n\r\n(I would like to get rid of size but can live with such signature). But how to handle getBuf()? Direct\r\n\r\n<pre>\r\n    &lt;Action Name=&quot;ConvertTo&quot;&gt;\r\n      &lt;Parameter Key=&quot;Direction&quot; Value=&quot;[Out]&quot; /&gt;\r\n      &lt;Parameter Key=&quot;ByRef&quot; Value=&quot;True&quot; /&gt;\r\n      &lt;Parameter Key=&quot;ManagedType&quot; Value=&quot;LPArray&quot; /&gt;\r\n      &lt;Parameter Key=&quot;MarshalAs&quot; Value=&quot;(default)&quot; /&gt;\r\n      &lt;Parameter Key=&quot;Attributes&quot; Value=&quot;[SizeParamIndexOffset=-1]&quot; /&gt;\r\n    &lt;/Action&gt;\r\n</pre>\r\n\r\ngives\r\n\r\n<pre>\r\npublic virtual extern void getBuf(out int size, out IntPtr[] buf);\r\n</pre>\r\n\r\nwhile I need\r\n\r\n<pre>\r\npublic virtual extern void getBuf(out int size, out byte[] buf);\r\n</pre>\r\n\r\nAny idea?\r\n\r\n \r\n\r\n \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "PostedDate": "2010-05-01T03:53:02.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

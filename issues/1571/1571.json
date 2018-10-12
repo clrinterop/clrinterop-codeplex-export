@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Function MsiGetProductInfoW (taken from MSI SDK v4.5 but earlier version have the same function)",
+    "LastUpdatedDate": "2017-11-27T18:42:15.983-08:00",
+    "PlannedForRelease": "PInvoke Interop Assistant",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2008-06-25T11:37:21.27-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Incorrectly handles parameter \"__inout_opt LPDWORD pcchValueBuf\"",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1571
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "UINT WINAPI MsiGetProductInfoW(\r\n\t__in LPCWSTR   szProduct,                              // product code\r\n\t__in LPCWSTR   szAttribute,                            // attribute name, case-sensitive\r\n\t__out_ecount_opt(*pcchValueBuf) LPWSTR lpValueBuf,     // returned value, NULL if not desired\r\n\t__inout_opt                     LPDWORD pcchValueBuf);  // in/out buffer character count\r\n\t\r\nThe tool transforms the last parameter to \r\n\r\n\tSystem.IntPtr pcchValueBuf\r\n\t\r\nBut this generates an ArgumentNullException at runtime.  I changed the parameter to be a reference\r\nparameter and it works correctly.\r\n\r\n\tref System.IntPtr pcchValueBuf",
+      "PostedDate": "2008-06-25T11:41:47.647-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-08-25T22:50:20.127-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:53:17.69-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-11-27T18:42:15.983-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

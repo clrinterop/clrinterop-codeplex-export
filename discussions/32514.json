@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "107850",
+    "ThreadId": "32514",
+    "Html": "can you use interop assistant with other&nbsp; .h files than windows.h? im doing some hid interop and it would be great if i could use interop assistant for that :) i guess you could paste the whole .h file into the snipplet tab but that doenst resovle strucs as good as the library.. <br>\r\n<br>\r\ninterop assistant is a great tool :) cant wait for the next version\r\n",
+    "PostedDate": "2008-07-29T17:46:45.573-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "110891",
+    "ThreadId": "32514",
+    "Html": "Right now the best way to use a .h file from the UI tool is to paste it into the snippet window.&nbsp; Definately not ideal for the scenario that you are describing.&nbsp; This would be a simple feature to add though.&nbsp; Can you file a feature request for this issue?&nbsp; <br>\r\n<br>\r\nThe current supported way is to use the command line version of the tool to process your own .h files.&nbsp; This should work for your scenario (although I'd still like to add it to the UI).\r\n",
+    "PostedDate": "2008-08-13T09:36:07.677-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "112433",
+    "ThreadId": "32514",
+    "Html": "sure :) how do you file feature requests? i didnt find any option for that in the issue tracker<br>\r\n<br>\r\nmsdn integration would also be awsome :) <br>\r\n..and filtering by .h file ;) <br>\r\n<br>\r\n",
+    "PostedDate": "2008-08-20T11:44:24.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "112471",
+    "ThreadId": "32514",
+    "Html": "You can file a feature request by clicking on the issue tracker tab.&nbsp; If there is no feature option just file it as a bug and assign it to me.&nbsp; <br>\r\n<br>\r\nWhat would you want out of MSDN integration?<br>\r\n<br>\r\nI agree filtering by .h would be nice as well.&nbsp;&nbsp;\r\n",
+    "PostedDate": "2008-08-20T14:04:03.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "113130",
+    "ThreadId": "32514",
+    "Html": "alright :) <br>\r\n<br>\r\nby msdn integration i mean pulling in the documentation for a perticular function and showing it somewhere in the app :) <br>\r\nnavigation of functions could also be done in the same way as msn :) perhaps&nbsp; you could even extend the vs documentation viewer? i dont know if thats possible though..\r\n",
+    "PostedDate": "2008-08-23T02:53:44.847-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "113131",
+    "ThreadId": "32514",
+    "Html": "ive added a few suggestions now :) <br>\r\nbut there doesnt seem to be a way to assign them to anyone.. maybe you have to be a member to do that :)\r\n",
+    "PostedDate": "2008-08-23T03:05:25.963-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

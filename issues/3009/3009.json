@@ -1,0 +1,71 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "TLBIMP converts VARIANT_BOOL to System.Boolean if you use /v2 option. \n \n--- COM ---\nstruct A\n{\n  VARIANT_BOOL B0;\n  VARIANT_BOOL B1;\n  VARIANT_BOOL B2;\n  VARIANT_BOOL B3;\n};\n \n--- C# ---\nstruct A\n{\n  bool B0;\n  bool B1;\n  bool B2;\n  bool B3;\n};\n \nBy default System.Boolean is marshaled as BOOL (4 bytes, TRUE = 1, FALSE = 0) but VARIANT_BOOL is different (2 bytes, VARIANT_TRUE = 0xFFFF, VARIANT_FALSE = 0). So, additional MarshalAs attribute is required.\n \nShould be\n \n--- C# ---\nstruct A\n{\n  [MarshalAs(UnmanagedType.VariantBool)]\n  bool B0;\n  [MarshalAs(UnmanagedType.VariantBool)]\n  bool B1;\n  [MarshalAs(UnmanagedType.VariantBool)]\n  bool B2;\n  [MarshalAs(UnmanagedType.VariantBool)]\n  bool B3;\n};\n \nThe bug is critical because field offsets and structure sizes can be different.\n \nSee attached proposed patch.",
+    "LastUpdatedDate": "2017-11-27T18:42:11.01-08:00",
+    "PlannedForRelease": "Type Library Importer in Managed Code",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2009-01-06T22:01:45.71-08:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Incorrect marshalling of VARIANT_BOOL",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3009
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1386,
+      "FileName": "TypeConverter.cs.diff",
+      "DownloadUrl": ".\\1386"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Assign to EricFu to see if we can get a quick fix on this.",
+      "PostedDate": "2009-01-20T00:33:45.807-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-01-20T00:33:46.68-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "A code change is checked in.\r\n\"MarshalAs(UnmanagedType.VariantBool)\" attribute is added to the bool field, when \"/v2\" switch converts VARIANT_BOOL to managed bool.\r\nFor bool parameter, the attribute is not added, according to the old TlbImp behavior.\r\nThis bug only happens on P/Invoke case. For COM interop case, the attribute is not needed.",
+      "PostedDate": "2009-02-05T01:35:06.307-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:53:15.65-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-11-27T18:42:11.01-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

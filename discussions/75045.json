@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "256806",
+    "ThreadId": "75045",
+    "Html": "<p>I have a follow up post related to the product I mentioned below in another post.&nbsp; I am not sure if it is applicable to this forum but I thought I would give it a try.&nbsp; The COM server control is an ocx written in c++ that also utilizes an activex wrapper. &nbsp;It is built as a native, MFC shared dll.&nbsp; I have the source.&nbsp; I am now able to build and register the ocx.&nbsp; My VB app works with it as well but here is the issue:&nbsp; The control works great when built with release configuration.&nbsp; However, when built in debug configuration it does not work.&nbsp; In debug, I can create an instance of the object.&nbsp; I can see all the events, properties and methods.&nbsp; The types are correct for the properties but almost all the property values state, &ldquo;&quot;Property Evaluation Failed&quot;.&nbsp; It seems as if they are not getting initialized when the instance gets created.&nbsp; I have been over all the build parameters to compare/change as much as possible to the release configuration to try to get the debug configuration working but no luck.&nbsp; I can break and step through in VS 2008 Pro and browse values successfully.&nbsp; I can provide more info if necessary but I want to make sure this is applicable to the forum.&nbsp; Thanks for any assistance or ideas.</p>",
+    "PostedDate": "2009-11-13T08:23:33.747-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "258305",
+    "ThreadId": "75045",
+    "Html": "<p>Nevermind - got it working....</p>",
+    "PostedDate": "2009-11-18T07:50:49.127-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

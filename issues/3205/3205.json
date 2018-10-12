@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Change Set: 21668\n \nPost-build event of the WindowsToolLauncher project is defined as following:\n  copy /y $(ProjectDir)..\\UnmanagedToManaged\\StorageGenerator\\Data\\windows.xml $(TargetDir)\n \nThis command failes when $(ProjectDir) contains empty spaces such as \"C:\\Users\\username\\Documents\\Visual Studio 2008\\Projects\\PInvokeTool\\\"\nPlease add quotations as below.\n  copy /y \"$(ProjectDir)..\\UnmanagedToManaged\\StorageGenerator\\Data\\windows.xml\" \"$(TargetDir)\"",
+    "LastUpdatedDate": "2013-02-21T15:53:15.353-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2009-02-15T07:25:38.543-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Build of WindowsToolLauncher fails when $(ProjectDir) contains empty spaces",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3205
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

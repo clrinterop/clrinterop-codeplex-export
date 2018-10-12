@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "284043",
+    "ThreadId": "82651",
+    "Html": "<p>Hey guys, I am trying to build a managed library to be &quot;binary compatible&quot; with a VB6 COM DLL ... This DLL is part of a boxed software product, and they provide a VB6 project for you to put your code in ... Although I have done this in the past, I want to see if I can build out a managed DLL that will be &quot;binary compatible&quot;&nbsp;</p>\r\n<p>anyone over there have experiance with this?</p>",
+    "PostedDate": "2010-01-31T14:40:47.65-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

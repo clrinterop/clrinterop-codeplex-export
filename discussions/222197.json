@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "475514",
+    "ThreadId": "222197",
+    "Html": "<pre>Hello,</pre>\r\n<p>I have discovered an issue when a .NET class is exposed to com and assesed using VBScript - in short the following is the issue (VbScript code)</p>\r\n<div style=\"color:black;background-color:white\">\r\n<pre><span style=\"color:blue\">Dim</span> Its</pre>\r\n<pre>Dim Application</pre>\r\n<pre>Set Application = CreateObject(&quot;dotNetCode.ApplicationClass&quot;)\r\n<span style=\"color:blue\">Set</span> Its = Application.Items\r\nMsgBox Its(1).name\r\n<span style=\"color:green\">'The Following also works</span>\r\nMsgBox Application.Items.Item(1).Name\r\n<span style=\"color:green\">'And so does</span>\r\nMsgBox Application.Items()(1).Name\r\n<span style=\"color:green\">'But this does not work</span>\r\nMsgBox Application.Items(1).Name\r\n</pre>\r\n</div>\r\n<p>More information on the exact issue can be found here - <a href=\"http://social.msdn.microsoft.com/Forums/en-US/vbinterop/thread/4b68da54-1e24-4461-b6c1-ceb16978eed4\">http://social.msdn.microsoft.com/Forums/en-US/vbinterop/thread/4b68da54-1e24-4461-b6c1-ceb16978eed4</a></p>\r\n<p>I believe that the implementation of iDispatch::Invoke is not entirely correct within .NET&nbsp;and does not follow all the rules that say VB6 followed&nbsp;- does this project provide the possibility to change the behavior of iDispatch::Invoke to fix this issue???</p>\r\n<p>The specific rules that need to be followed are:</p>\r\n<p>The rule for implementers of IDispatch::Invoke is if all of the following are true:<br>&bull;the caller invokes a property <br>&bull;the caller passes an argument list <br>&bull;the property does not actually take an argument list <br>&bull;that property returns an object <br>&bull;that object has a default property <br>&bull;that default property takes an argument list<br>then invoke the default property with the argument list.</p>\r\n<p>Thanks very much for your help.</p>\r\n<p>Matthew</p>",
+    "PostedDate": "2010-08-02T09:56:43.96-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

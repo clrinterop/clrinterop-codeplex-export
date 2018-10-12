@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "180743",
+    "ThreadId": "53684",
+    "Html": "Hi,<br>\r\n<br>\r\nBig thank you for your work on tlbimp2.<br>\r\n<br>\r\nSince I am working on doing a few customizations to the tlbimp2 source code to suit my project's needs, I was wondering if you knew how I could have Visual Studio use my version of tlbimp2 instead of whatever it uses by default when I do an &quot;Add Reference&quot; of a COM component.<br>\r\n<br>\r\nI originally thought that Visual Studio just used the standard tlbimp tool that comes with the .NET Framework SDK, but I've realized that it doesn't.&nbsp; So I am not sure how I could get Visual Studio to point to my version of the tlbimp tool.<br>\r\n<br>\r\nIs it possible?<br>\r\n<br>\r\nThanks!<br>\r\nsam \r\n",
+    "PostedDate": "2009-04-17T19:41:48.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "181331",
+    "ThreadId": "53684",
+    "Html": "Hi,<br>\r\nAs far as I know, Visual Studio 2005/2008 is calling into the TypeLibConverter API in mscorlib and it is implemented by CLR, so it is not possible to have VS to use your own version of TLbImp at this moment. For now, please use your own version of TlbImp to generate interop assembly and then use VS to add reference to the interop assembly you've just created. We are looking at creating an VS addin or a standlone tool to make the process easier, but the plan is not finalized yet. If the current workaround doesn't quite work for you, feel free to let us know.<br>\r\n<br>\r\nThanks,<br>\r\nYi \r\n",
+    "PostedDate": "2009-04-20T08:18:51.603-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "181515",
+    "ThreadId": "53684",
+    "Html": "Hi Yi,<br>\r\n<br>\r\nThanks for the info.<br>\r\n<br>\r\nI am unfortunately in a position where our project still has active VB6 development along side some C#.&nbsp; Because the VB6 components referenced by the C# code changes frequently, I would be forced to ask our developers to frequently run the tlbimp tool on the side and then add reference on the generated interop assembly.&nbsp; For now, I think I am going to pass on my customized tlbimp so that the rest of the team doesn't have to change the way they work with their COM references in VS.<br>\r\n<br>\r\nI am very hopeful however that things will become a lot easier if a VS add-in is implemented in the future.<br>\r\n<br>\r\nThanks for your hard work, I'll keep checking back for further developments.<br>\r\nsam<br>\r\n",
+    "PostedDate": "2009-04-20T14:34:40.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

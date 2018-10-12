@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "437056",
+    "ThreadId": "211003",
+    "Html": "<p>I've noticed that if I have a COM interface declaring an out parameter such as</p>\r\n<p>HRESULT MyMethod([out] BSTR *outVal);</p>\r\n<p>The interop contains an &quot;out string outVal&quot; as expected;</p>\r\n<p>int MyMethod(out string outVal);</p>\r\n<p>But if I have:</p>\r\n<p>typedef BSTR MyStringType;</p>\r\n<p>HRESULT MyMethod([out] MyStringType *outVal);</p>\r\n<p>The interop becomes:</p>\r\n<p>int MyMethod(StringBuilder outVal);</p>\r\n<p>Is this behavior really correct? I would expect an &quot;out string&quot; as usual.</p>\r\n<p>Adding the following line below line 536 of TypeConverter.cs in the released source code seems to fix the problem:</p>\r\n<p>m_nativeIndirections += builtinType.m_nativeIndirections;</p>\r\n<p>Any thoughts on this?</p>\r\n<p>Regards, Peter.</p>",
+    "PostedDate": "2010-04-29T06:12:50.827-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

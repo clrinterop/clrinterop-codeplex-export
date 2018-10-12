@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\nI am using a c# wrapper, in the c++ library, the called function returns a pointer to the class object.\nIn the c# wrapper, if I call that method it returns an interface variable.\nThat interface variable is null, so I am unable gets the values.\nHow should I handle that interface variable in order to get values.\nAnyone please help me.",
+    "LastUpdatedDate": "2013-05-07T05:04:59.093-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2013-05-07T05:02:46.137-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "How to convert the returned interface variable by a method to object?",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10981
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

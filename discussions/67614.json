@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "229802",
+    "ThreadId": "67614",
+    "Html": "<p>Hi!</p>\r\n<p>I have&nbsp;IDL entry like this:</p>\r\n<p>HRESULT Method([in, ref] VARIANT* pVal);</p>\r\n<p>I need to&nbsp;call&nbsp;this method with value VARIANT VT_EMPTY (but 'null' converts into VT_NULL).</p>\r\n<p>Manually editing IL-code&nbsp;allows me to solve this problem:</p>\r\n<p>.method public hidebysig newslot abstract virtual <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; instance void&nbsp; Method([in] native int pVal) runtime managed internalcall</p>\r\n<p>(I replace &quot;[in] object&amp;&nbsp; marshal(struct) pVal&quot; =&gt;&quot;[in] native int pVal&quot;)</p>\r\n<p>How to make this in TlbImp2?</p>",
+    "PostedDate": "2009-09-01T10:41:29.003-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230526",
+    "ThreadId": "67614",
+    "Html": "<p>It seems the latest version of TlbImpConfigFileEditor.exe doesnt support native int or intptr when using ConvertTo action. we will add this ConvertTo action in the furture.</p>",
+    "PostedDate": "2009-09-02T23:22:42.7-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "230690",
+    "ThreadId": "67614",
+    "Html": "<p>Thanks, I will look forward</p>",
+    "PostedDate": "2009-09-03T07:34:18.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "658208",
+    "ThreadId": "67614",
+    "Html": "<p>What about this issue? 2 yeras passed :( Current feature is important for me. Any chances that tlbimp2 will support this?</p>",
+    "PostedDate": "2011-08-15T01:51:40.457-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

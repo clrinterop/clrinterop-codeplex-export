@@ -1,0 +1,14 @@
+--- C:\DOCUME~1\SSHAND~1.FIB\LOCALS~1\Temp\TypeConverter.cs-rev6281.svn000.tmp.cs	Wed Jan  7 16:09:39 2009
++++ C:\development\tlbimp\TypeConverter.cs	Wed Jan  7 16:11:01 2009
+@@ -697,7 +697,11 @@
+                     if (m_conversionType == ConversionType.Field && (!m_info.Settings.m_isVersion2))
+                         result = typeof(short);
+                     else
++                    {
+                         result = typeof(bool);
++                        this.m_attribute = CustomAttributeHelper.GetBuilderForMarshalAs(UnmanagedType.VariantBool);
++                        this.SetUnmanagedType(UnmanagedType.VariantBool);
++                    }
+                     break;
+ 
+                 default:

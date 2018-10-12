@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "154936",
+    "ThreadId": "46391",
+    "Html": "Hi.<br>\r\n<br>\r\nThank you for TlbImp2.exe.<br>\r\n<br>\r\nI would like to request that &quot;AssemblyInfo.cs&quot; be created for this project so that a version number can be produced for TlbImp2.exe.<br>\r\n<br>\r\nCurrently the file version for TlbImp2.exe is &quot;0.0.0.0&quot; and it should be incremented for the next release to improve manageability and avoid versioning conflicts.<br>\r\n<br>\r\nThank you very much.&nbsp; :)<br>\r\n",
+    "PostedDate": "2009-02-05T21:21:48.19-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "181339",
+    "ThreadId": "46391",
+    "Html": "Hi,<br>\r\nIs your type library version is 0.0.0.0? By default Tlbimp uses the version of type library as assembly version, so if you change the type library version, the output interop assembly version would change as well. TlbImp also supports /asmversion switch that allows you to specify the assembly version.<br>\r\n<br>\r\nThansk,<br>\r\nYi\r\n",
+    "PostedDate": "2009-04-20T08:31:28.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

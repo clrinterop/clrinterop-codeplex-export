@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The -help description for SigImp indicates that it can accept multiple header files for processing. However, when attempting to use this feature I found that only the first header file would be processed. I found the problem in the ProcessHeaderFiles() function of Module1.vb.\n\nThis line:\nwriter.Write(\"#include \"\"{0}\"\"\", p)\nShould be changed to:\nwriter.WriteLine(\"#include \"\"{0}\"\"\", p)\n\nThis ensures that each #include statement written to the temporary file is written to its own line, which allows the preprocessor to properly parse them.",
+    "LastUpdatedDate": "2013-02-21T15:53:12.28-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2012-11-13T18:18:23.577-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "SigImp: Does not process more than one header file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 10598
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

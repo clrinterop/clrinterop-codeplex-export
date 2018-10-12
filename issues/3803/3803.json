@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "IDL file:\n \n[uuid(791B8E24-28A1-4d85-A00A-5C1EFE3E08EA)]\nlibrary lib\n{\n    [uuid(0AB14DF8-BF44-4e2e-A948-5D2D672FB678)]\n    typedef\n    struct A\n    {\n        VARIANT_BOOL B[4];\n    } A;\n}\n \nGenerated .NET code:\n \n[StructLayout(LayoutKind.Sequential, Pack=2), Guid(\"0AB14DF8-BF44-4E2E-A948-5D2D672FB678\")]\npublic struct A\n{\n[MarshalAs(UnmanagedType.ByValArray, SizeConst=4)]\npublic bool[] B;\n}\n \nExpected code:\n \n[StructLayout(LayoutKind.Sequential, Pack=2), Guid(\"0AB14DF8-BF44-4E2E-A948-5D2D672FB678\")]\npublic struct A\n{\n[MarshalAs(UnmanagedType.ByValArray, SizeConst=4, ArraySubType=UnmanagedType.VariantBool)]\npublic bool[] B;\n}\n \nSee also https://connect.microsoft.com/VisualStudio/feedback/ViewFeedback.aspx?FeedbackID=470491 and http://clrinterop.codeplex.com/WorkItem/View.aspx?WorkItemId=3009",
+    "LastUpdatedDate": "2013-02-21T15:53:15.047-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2009-06-25T20:31:30.413-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "TLBIMP converting C array of VARIANT_BOOL as C array of BOOL.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3803
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

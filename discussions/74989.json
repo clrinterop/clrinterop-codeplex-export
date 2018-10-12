@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "256625",
+    "ThreadId": "74989",
+    "Html": "<p>Hi</p>\r\n<p>We're using a c++ native dll in a C# .NET application. The native dll logs the DllMain DLL_PROCESS_ATTACH and DLL_PROCESS_DETACH call into a file. During some time the .NET application runns, we find a lot if&nbsp; DLL_PROCESS_DETACH and DLL_PROCESS_ATTACH log entries with a time gap between 3s and 30s.</p>\r\n<p>What happens here?</p>\r\n<p>In my opinion, if a dll is once loaded into .NET domain, it cannot be unloaded!</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-11-13T00:52:17.693-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

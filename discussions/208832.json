@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "429249",
+    "ThreadId": "208832",
+    "Html": "<p>Is there a reason that tlbimp2 is cannot set the file version to a different value to the assembly version of the generated interop assembly?</p>\r\n<p>We have a situation where we need to re-build our interop but keep the assembly version the same (to keep compatibility with other assemblies which are using un-changed interfaces).&nbsp; unfortunately, msi patches don't seem to update the file as it relies on the file version to determine if the file should be patched... i can change the code of tlbimp2 to do set this, however i was wondering if there is a reason that this version cannot currently be set?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-04-09T06:10:48.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "562589",
+    "ThreadId": "208832",
+    "Html": "\r\n<p>I would also like this for the reasons outlined above - it makes it very hard to patch these dlls without the ability to set the file version. At the moment we use tlbimp, then our own custom tool for updating the file version, and then we have to resign\r\n the dll again, it's a bit of a laborious process. In lieu of this not being a feature in tlbimp2, has anyone already made the modification to allow this? Perhaps you could share the code to prevent us repeating your work?</p>\r\n<p>Stu</p>\r\n",
+    "PostedDate": "2011-02-08T05:04:12.79-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "562714",
+    "ThreadId": "208832",
+    "Html": "\r\n<p>these were simple changes to make.</p>\r\n<p>we added the m_strFileVersion member to the TlbImpOptions&nbsp;class, just implemented it to use the same File Version number from the source file:</p>\r\n<p>&nbsp;</p>\r\n<p>We made modifications to the ParseArguments function in tlbimp.cs:</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; // if the fileversion wasn't given, use the version number of the input file</p>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; if (Options.m_strFileVersion == null)</div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; {</div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// get the fileversion</div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FileVersionInfo versionInfo = FileVersionInfo.GetVersionInfo(Options.m_strTypeLibName);</div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Options.m_strFileVersion = versionInfo.FileVersion;</div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; }</div>\r\n<div></div>\r\n<div></div>\r\n<div>We also modified the DoImport function in tlbimpcode.cs to pass the file version string, and generate the new attribute:</div>\r\n<div>\r\n<div></div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;if (!String.IsNullOrEmpty(strFileVersion))</div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;{</div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CustomAttributeBuilder wb = new CustomAttributeBuilder(typeof(System.Reflection.AssemblyFileVersionAttribute).GetConstructor(new Type[] { typeof(string) }), new object[] { strFileVersion });</div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; AsmBldr.SetCustomAttribute(wb);</div>\r\n<div>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}</div>\r\n<div></div>\r\n<div></div>\r\n<div>the same could be done for the product number, and i guess you could implement it to accept a value on the command line. this was beyond what we needed to do, so we didn't!</div>\r\n<div></div>\r\n<div></div>\r\n<div>Tim.</div>\r\n<div></div>\r\n</div>\r\n",
+    "PostedDate": "2011-02-08T08:03:18.677-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

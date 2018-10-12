@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "209810",
+    "ThreadId": "61817",
+    "Html": "<p>Hi,</p>\r\n<p>I wanted to know what is the best practice to unload native c++ dll from a new C# appdomain.</p>\r\n<p>I see that when I am loading a managed dll that uses native dll to a new appdomain, when I unload the appdomain only the managed dll is unloaded and the native dll is still in memory. I have managed to unload the native dll by calling to FreeLibrary on the dll handle.</p>\r\n<p>When I try creating a C++\\CLI dll and load it into a new appdomain I encounter the same problem but worser since I can see that the native/managed dll is now loaded to the new appdomain and the default appdomain as well and when I unload the new appdomain, the c++\\cli stays in memory for both the managed and the native parts (I attached with a debugger as managed / native and saw that the dll appearstwice one for native and one for managed)</p>\r\n<p>Thanks,<br>Eyal</p>",
+    "PostedDate": "2009-07-08T01:29:34.117-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "210892",
+    "ThreadId": "61817",
+    "Html": "<p>If the dll is loaded into the process because managed code interop the code in the dll, clr does not provide a method to unload it. It could be very dangerous for clr to do this because there might be other code (even native code) which depends on that dll. If you do assure that dll is not used any more, calling a windows API like FreeLibrary may be easiest way to unload the dll.</p>\r\n<p>Ijw is a combination of managed and native binaries. Therefore, for each ijw&nbsp; Visual Studio debugger shows the managed and native items. You can tell whether they are same by checking the address of them.</p>\r\n<p>You also mentioned that ijw dll still in the process after appdomain is unloaded. My experiment didn&rsquo;t show me this observation. Can you describe your scenario like how to load the ijw dll and invoke the method inside it? Note that if the default appdomain keeps a reference of the object whose type is defined in ijw the ijw need stay in the default domain.</p>",
+    "PostedDate": "2009-07-10T09:45:23.023-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "211164",
+    "ThreadId": "61817",
+    "Html": "<p>Hi Yongtai,</p>\r\n<p>Thanks for your fast answer.</p>\r\n<p>I am calling a native dll using the P/Invoke signature and I am the only one who is using the native dll so according to your answer it sounds that FreeLibrary is an accepted way to unload the dll. It was working for me fine but I wasn't sure it is the right way to unload it.</p>\r\n<p>Anyway the solution above was done since I failed to do it using ijw. I will describe what I have done and tell me if something is wrong:</p>\r\n<p>1. I have created a managed dll which defines the interface that was implemented in ijw dll.<br>2. I have created the ijw dll which implement the interface.<br>3. In a wcf service I added a refference to the managed dll that contains the interface.<br>4. Inside one of the wcf service methods I have created new appdoamin and created the managed type from the ijw dll by reference&nbsp;in the wcf service process (w3wp.exe). The reference pointer is from type of the interface so no need for the default appdomain to load the ijw dll.<br>5. When I looked at modules I can see the ijw dll appears in both the default appdomain and the new appdomain I have created.<br>6. after unloading the new appdomain the dll still appears in the w3wp process at the default appdomain.</p>\r\n<p>Do you have an idea what cause this behaviour? is it the fact that it runs under IIS causing the CLR to behave differently then in&nbsp;a console process?</p>\r\n<p>Thanks,</p>\r\n<p>Eyal</p>",
+    "PostedDate": "2009-07-12T00:15:31.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

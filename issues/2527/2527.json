@@ -1,0 +1,116 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "It would be good if tlbimp can remove useless enum prefixes. For exmample, this IDL code:\n \nenum RGB\n{\n  RGB_Red = 0,\n  RGB_Green = 1,\n  RGB_Blue = 2,\n};\n \nhas to be converted to .NET enum as\n \nenum RGB\n{\n  Red = 0,\n  Green = 1,\n  Blue = 2,\n};\n \nThe enumeration items in COM are global, in .NET they are local so the transformation would be logical. Also tlbexp converting .NET enum to COM enum with added prefixes.",
+    "LastUpdatedDate": "2017-11-27T18:42:10.817-08:00",
+    "PlannedForRelease": "Type Library Importer in Managed Code",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2008-10-29T17:26:30.983-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "TlbImp: converting enum without prefixes.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 6,
+    "Id": 2527
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1136,
+      "FileName": "ConvCommon.cs.diff",
+      "DownloadUrl": ".\\1136"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Proposed patch.",
+      "PostedDate": "2008-10-29T19:55:39.427-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-10-29T19:55:41.85-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I could commit the changes myself if I have access.",
+      "PostedDate": "2008-11-05T17:27:16.7-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-11-11T00:59:14.177-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-12-25T05:47:24.233-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-01-20T00:30:16.993-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Assign to EricFu and see if we can get a quick fix on this.",
+      "PostedDate": "2009-01-20T00:34:46.183-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-01-20T00:34:46.853-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "A code change is checked in.\r\nTry \"/removeenumprefix\" switch to enable the behavior.",
+      "PostedDate": "2009-02-05T00:59:45.577-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-10-19T06:25:11.74-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-08-21T05:52:40.657-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2011-07-28T02:41:34.46-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:53:16.287-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-11-27T18:42:10.817-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

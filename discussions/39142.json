@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "129825",
+    "ThreadId": "39142",
+    "Html": "New to me.  How do these tools work?  If I understood sessions from PDC 08, these tools will allow a wrapper to be created for C++ and/or ANSI C to C#/VB ( and vise versa )?  If so, what do you do to create wrapper?  Do you load a DLL compiled and created from C++ and/or ANSI C and will create a .NET class?  Let's say I have a DLL developed in C++ that includes a few functions to interface/communicate with a vendor's module via serial port.  If I run this tool, will it create a class including the same functions and data types ( enums, structs, etc. )?\r\n",
+    "PostedDate": "2008-11-03T17:00:55.42-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "148625",
+    "ThreadId": "39142",
+    "Html": "Hi shaqqyqi, did you mean SigImp tool in P/Invoke Interop Assistant? For the UI tool, it's only allowed users to select a Windows API from the database, or input a C code snippet to generate a wrapper. As to the command line tool, it's required to feed a header file instead of a DLL.<br>\r\n<br>\r\nHope it helps,<br>\r\nXiaoying\r\n",
+    "PostedDate": "2009-01-19T23:58:19.99-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

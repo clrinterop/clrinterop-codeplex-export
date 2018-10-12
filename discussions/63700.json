@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "216588",
+    "ThreadId": "63700",
+    "Html": "<p>Given the IDL definition:</p>\r\n<div style=\"color:Black;background-color:White\">\r\n<pre>[\r\n   <span style=\"color:Blue\">object</span>,\r\n   uuid(SOME_GUID),\r\n   dual, \r\n   oleautomation, \r\n   helpstring(<span style=\"color:#A31515\">&quot;IFoo Interface&quot;</span>),\r\n   pointer_default(unique)\r\n]\r\n<span style=\"color:Blue\">interface</span><span style=\"color:MediumTurquoise\"> IFoo : IUnknown\r\n</span>{\r\n   HRESULT Foomethod([<span style=\"color:Blue\">in</span>]BSTR aString);\r\n};\r\n\r\n[\r\n   uuid(SOME_OTHER_GUID),\r\n   helpstring(<span style=\"color:#A31515\">&quot;Foo Class&quot;</span>)\r\n]\r\nco<span style=\"color:Blue\">class</span><span style=\"color:MediumTurquoise\"> Foo\r\n</span>{\r\n   [<span style=\"color:Blue\">default</span>] interface IFoo;\r\n};\r\n\r\nThe interop generated from this IDL will generate 1 interface definition (IFoo), 1 class definition (FooClass) and 1 (for lack of better term) hybrid (Foo) that is an interface but can be created.  </pre>\r\n<pre>Valid ways of creating the Foo CoClass would be:</pre>\r\n<pre><div style=\"color:Black;background-color:White\"><pre>IFoo foo1 = <span style=\"color:Blue\">new</span> FooClass( );\r\nIFoo foo2 = <span style=\"color:Blue\">new</span> Foo( );\r\nFoo foo3 = <span style=\"color:Blue\">new</span> FooClass( );\r\nFoo foo4 = <span style=\"color:Blue\">new</span> Foo( );\r\n</pre>\r\n<pre>Questions:</pre>\r\n<pre>Is any of these initialization expressions better than any other?</pre>\r\n<pre>Why is the hybrid type definition generated at all?</pre>\r\n<pre>Is there a way to suppress the generation of the hybrid type definition?</pre>\r\n<pre>Is there a way have methods that take an IFoo interface as a parameter in the IDL take an IFoo interface in the interop assembly instead of the hybrid type definition?</pre>\r\n<pre>If tlbimp doesn't do this is there a way to have tlbimp2 do this?</pre>\r\n<pre>Thanks for any help on this.</pre>\r\n</div>\r\n</pre>\r\n</div>",
+    "PostedDate": "2009-07-27T16:19:42.2-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "217089",
+    "ThreadId": "63700",
+    "Html": "<p>Is any of these initialization expressions better than any other?</p>\r\n<p><span style=\"color:#008080\"><span style=\"font-size:small\">IFoo foo1 = <span style=\"color:blue\">new</span> FooClass( );<br>IFoo foo2 = <span style=\"color:blue\">new</span> Foo( );<br>Foo foo3 = <span style=\"color:blue\">new</span> FooClass( );<br>Foo foo4 = <span style=\"color:blue\">new</span> Foo( );<br></span></span><span style=\"color:#008080\"><span style=\"font-size:small\"><span style=\"color:#008080\">//compiler will do a lot of stuff to translate the CoClass(new Foo). but&nbsp; the&nbsp; generated IL Code is same for the above 4 cases( <span style=\"font-size:small\">newobj instance void *Lib.FooClass::.ctor()). </span></span></span></span></p>\r\n<p><span style=\"color:#008080\"><span style=\"font-size:small\"><span style=\"color:#008080\"><span style=\"font-size:small\">so they are equal if you dont carethe work of compiler.</span></span></span></span></p>\r\n<p>Why is the hybrid type definition generated at all?</p>\r\n<p><span style=\"color:#008080\">The original reason is to avoid the confusion of dealing with renamed classes, so user can write code to instantiate an &quot;interface&quot;. </span></p>\r\n<p>Is there a way to suppress the generation of the hybrid type definition?</p>\r\n<p><span style=\"color:#008080\">not yet. There is no way to do so except manually.(both for tlbimp and tlbimp2)</span></p>\r\n<p>4. Is there a way have methods that take an IFoo interface as a parameter in the IDL take an IFoo interface in the interop assembly instead of the hybrid type definition?</p>\r\n<p><span style=\"color:#008080\">The default behavior: if the ifoo interface isn't default interface, then we will keep it the original one IFoo. but if the ifoo is default interface, we will translate the ifoo into coclass instead</span><br><span style=\"color:#008080\">if you want to change the default behavior, you can use other tools, such as tlbimp customization.</span></p>\r\n<p>5. If tlbimp doesn't do this is there a way to have tlbimp2 do this?</p>\r\n<p><span style=\"color:#008080\">Not sure what the &quot;do&quot; mean? </span></p>",
+    "PostedDate": "2009-07-29T01:35:31.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "217216",
+    "ThreadId": "63700",
+    "Html": "<p>Thanks for the response and you answered the 'do' question, I meant is there a way to suppress the 'hybrid' type.&nbsp;</p>\r\n<p>Its kind of interesting you mentioned the 'hybrid' (BTW is there a better name for it) was added to avoid confusion since it has done the opposite for myself and several other developers I work with.</p>",
+    "PostedDate": "2009-07-29T08:42:04.48-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "217468",
+    "ThreadId": "63700",
+    "Html": "<p>Its kind of interesting you mentioned the 'hybrid' (BTW is there a better name for it) was added to avoid confusion since it has done the opposite for myself and several other developers I work with.</p>\r\n<p><span style=\"color:#008080\">Yes. there is a name for this.&nbsp; For example. Foo is coclass interface, FooClass is RCW Class.&nbsp; About the opposite result. we are very sorry for this and maybe improve or change this in the furture release.</span></p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-07-29T23:45:11.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

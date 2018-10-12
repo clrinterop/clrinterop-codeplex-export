@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "the app could allow the user to create more then one generated class and allow the user to add functions to these classes as the users see fit\n \nthe app could have a ui for showing the classes and methods and items in a tree similar to the object view in vs or in reflector",
+    "LastUpdatedDate": "2013-02-21T15:53:16.897-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2008-08-23T03:03:40.817-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "grouping of generated classes/namespaces",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 2159
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thank you for your suggestion. Unfortunately CLR and existing compilers don't support adding functions with your own implementation into any classes with ComImport. Could you please clarify exactly what kind of grouping do you need?",
+      "PostedDate": "2009-03-12T22:55:21.95-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-08-21T05:52:54.437-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-21T15:53:16.897-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

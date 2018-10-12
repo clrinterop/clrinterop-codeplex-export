@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When you build a minor setup using the msi engine (microsoft windows installer) will only replace versioned files with a higher versionnumber. It currently is not possible to increase the file version without also increasing the assembly version. If I increase the assembly version all referencing assemblies need to be rebuilded or I need to deploy a publisher policy file. I would really like to specify the assembly file version at the command line. I currently changed the code myself, but I would like to have this feature merged into the code. The flollowing changes have to be made:\n \ntlbimp2.Process.CreateAssemblyBuilder has to be extended with the following code:\n                // Handle file version\n                if(fileVersion != null)\n                {\n                  assemblyBuilder.SetCustomAttribute(CustomAttributeHelper.GetBuilderForFileVersion(fileVersion.ToString()));\n                }\n \n                // Handle product\n                if(!string.IsNullOrEmpty(product))\n                {\n                  assemblyBuilder.SetCustomAttribute(CustomAttributeHelper.GetBuilderForProduct(product));\n                }\n \n                // Handle company\n                if(!string.IsNullOrEmpty(company))\n                {\n                  assemblyBuilder.SetCustomAttribute(CustomAttributeHelper.GetBuilderForCompany(company));\n                }\n \n                // Handle copyright\n                if(!string.IsNullOrEmpty(copyright))\n                {\n                  assemblyBuilder.SetCustomAttribute(CustomAttributeHelper.GetBuilderForCopyright(copyright));\n                }\n \n                // Handle trademark\n                if(!string.IsNullOrEmpty(trademark))\n                {\n                  assemblyBuilder.SetCustomAttribute(CustomAttributeHelper.GetBuilderForTrademark(trademark));\n                }\n \n                // Handle product version\n                if(!string.IsNullOrEmpty(productversion))\n                {\n                  assemblyBuilder.SetCustomAttribute(CustomAttributeHelper.GetBuilderForProductversion(productversion));\n                }\n \ntlbimp2.CustomAttributeHelper has to be extended by the method above setting the following attributes:\nAssemblyFileVersionAttribute\nAssemblyProductAttribute\nAssemblyCopyrightAttribute\nAssemblyCompanyAttribute\nAssemblyTrademarkAttribute\nAssemblyInformationalVersionAttribute\n \nDefineVersionInfoResource should be called without any parameters.",
+    "LastUpdatedDate": "2013-02-21T15:53:15.83-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2008-12-19T03:05:04.047-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Allow specifying of FileVersion",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 5,
+    "Id": 2920
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

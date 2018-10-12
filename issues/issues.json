@@ -1,0 +1,134 @@
+[
+  {
+    "Id": 1540,
+    "Title": "setup.exe does not detect installed .NET 2.0 correctly"
+  },
+  {
+    "Id": 1556,
+    "Title": "Crash on opening sigexplib.dll (generic)"
+  },
+  {
+    "Id": 1571,
+    "Title": "Incorrectly handles parameter \"__inout_opt LPDWORD pcchValueBuf\""
+  },
+  {
+    "Id": 1685,
+    "Title": "Tool ignore LCIDCOnversionAttribute"
+  },
+  {
+    "Id": 2157,
+    "Title": "other .h files"
+  },
+  {
+    "Id": 2158,
+    "Title": "msdn integration"
+  },
+  {
+    "Id": 2159,
+    "Title": "grouping of generated classes/namespaces"
+  },
+  {
+    "Id": 2277,
+    "Title": "#pragma pack is ignored when creating structures"
+  },
+  {
+    "Id": 2453,
+    "Title": "'Data4' section of GUID incorrectly generated as a string"
+  },
+  {
+    "Id": 2527,
+    "Title": "TlbImp: converting enum without prefixes."
+  },
+  {
+    "Id": 2565,
+    "Title": "TlbImp: Replace well known interfaces like IStream with their existing managed definition"
+  },
+  {
+    "Id": 2920,
+    "Title": "Allow specifying of FileVersion"
+  },
+  {
+    "Id": 3009,
+    "Title": "Incorrect marshalling of VARIANT_BOOL"
+  },
+  {
+    "Id": 3060,
+    "Title": "Errors for API's"
+  },
+  {
+    "Id": 3205,
+    "Title": "Build of WindowsToolLauncher fails when $(ProjectDir) contains empty spaces"
+  },
+  {
+    "Id": 3666,
+    "Title": "P/Invoke Interop Assistant does not work well on x64"
+  },
+  {
+    "Id": 3803,
+    "Title": "TLBIMP converting C array of VARIANT_BOOL as C array of BOOL."
+  },
+  {
+    "Id": 4231,
+    "Title": "TlbImp: Suppress types from being imported"
+  },
+  {
+    "Id": 4442,
+    "Title": "SigImp TranslateSnippet should translate SAFEARRAY into [MarshalAs(SafeArray)] Array"
+  },
+  {
+    "Id": 4521,
+    "Title": "tlbimp: /silence:WarningNumber behaves confusing"
+  },
+  {
+    "Id": 4540,
+    "Title": "IL Stub Diagnostics: Serialize the events to XML file"
+  },
+  {
+    "Id": 4541,
+    "Title": "IL Stub Diagnostics: Add more filters to help user find their stub more easily"
+  },
+  {
+    "Id": 4542,
+    "Title": "IL Stub Diagnostics: Home/End navigator button"
+  },
+  {
+    "Id": 4543,
+    "Title": "IL Stub Diagnostics: Provide a button to clear all IL stubs"
+  },
+  {
+    "Id": 4544,
+    "Title": "IL Stub Diagnostics: Improve the experience of refresh button"
+  },
+  {
+    "Id": 5441,
+    "Title": "tlbimp2: Missing support for ConvertTo->IntPtr (native int)"
+  },
+  {
+    "Id": 10275,
+    "Title": "Bitfields resulting a Memory Leak"
+  },
+  {
+    "Id": 10470,
+    "Title": "Remove the word Attribute from Attributes in generated code and optionally remove namespaces"
+  },
+  {
+    "Id": 10471,
+    "Title": "Add support for Robert Giesecke Unmanaged Exports"
+  },
+  {
+    "Id": 10472,
+    "Title": "Why is there a shortcut to winsiggen.exe in \"%ProgramFiles(x86)%\\InteropSignatureToolkit\\\""
+  },
+  {
+    "Id": 10473,
+    "Title": "Can WindowsTool and WindowsToolLauncher be combined into one project?"
+  },
+  {
+    "Id": 10598,
+    "Title": "SigImp: Does not process more than one header file"
+  },
+  {
+    "Id": 10981,
+    "Title": "How to convert the returned interface variable by a method to object?"
+  }
+]

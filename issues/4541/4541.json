@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "We currently suport using PID, PName and MethodName as the filters and we plan to support more like\n- Category\n- Native sig\n- stub methodIdentifier",
+    "LastUpdatedDate": "2013-02-21T15:53:14.237-08:00",
+    "PlannedForRelease": "IL Stub Diagnostics Tool",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2009-10-21T23:30:23.583-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IL Stub Diagnostics: Add more filters to help user find their stub more easily",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 0,
+    "Id": 4541
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

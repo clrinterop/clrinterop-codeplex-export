@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Currently, filters take efforts after refresh buttons is pressed. We got some feedback in the internal bugbesh reporting that it is not very obvious for users to discover or understand the usage as \"refresh\" does not give lots of hints here.\n \nWe may borrow some UI design from Excel filter buttons or procmon filters to refine the design.",
+    "LastUpdatedDate": "2013-02-21T15:53:13.877-08:00",
+    "PlannedForRelease": "IL Stub Diagnostics Tool",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2009-10-21T23:43:29.647-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IL Stub Diagnostics: Improve the experience of refresh button",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 0,
+    "Id": 4544
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

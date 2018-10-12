@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Robert Giesecke wrote a msbuild task and csproj wrapper for it that allows you to make a static function a PEExport https://sites.google.com/site/robertgiesecke/Home/uploads/unmanagedexports\n \nWould you consider accepting patches that supported this such as taking a C prototype and making a C# function stub.",
+    "LastUpdatedDate": "2013-06-21T08:50:02.2-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2012-09-07T06:38:43.777-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add support for Robert Giesecke Unmanaged Exports",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 10471
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

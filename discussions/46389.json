@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "154933",
+    "ThreadId": "46389",
+    "Html": "Hi.<br>\r\n<br>\r\nThank you for TlbImp2.exe.<br>\r\n<br>\r\nI would like to request a new feature:<br>\r\n<br>\r\nThe ability to automatically extract the namespace and type library name, and apply it to the output file.<br>\r\n<br>\r\nFor example,<br>\r\n<br>\r\nI would like to run &quot;TlbImp2.exe MyCOMFile.dll&quot; and have it automatically create &quot;Interop.TLBName.dll&quot; and use the namespace as it is applied in the type library.<br>\r\n<br>\r\nThank you very much.&nbsp; :) \r\n",
+    "PostedDate": "2009-02-05T20:55:16.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "181346",
+    "ThreadId": "46389",
+    "Html": "Hi,<br>\r\nThank you for your suggestion. Currently TlbImp2 does use the type library name as the output assembly name. Using your example, &quot;TlbImp2 MyComFile.dll&quot; will create &quot;TlbName.dll&quot;. The reason we are not creating &quot;Interop.TlbName.dll&quot; is that 1) It would break existing applications that expect &quot;TlbName.dll&quot; 2) The assembly name would be inconsistent with the namespace, as with such dll you would expect the namespace to be &quot;Interop.TlbName&quot;, which is actually &quot;TlbName&quot;. Could you please explain why existing TlbImp behavior doesn't work for you and could you please provide specific scenarios for us to look into?<br>\r\n<br>\r\nThanks,<br>\r\nYi\r\n",
+    "PostedDate": "2009-04-20T08:44:13.593-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "183920",
+    "ThreadId": "46389",
+    "Html": "For namespace concern, you can use tlbimp /namespace instead.\r\n",
+    "PostedDate": "2009-04-26T22:04:26.82-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

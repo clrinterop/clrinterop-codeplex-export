@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "With the new version we are able to map all references to the local IStream definition to System.Runtime.InteropServices.ComTypes.IStream. \nUnfortunately the now unreferenced local IStream definition, as well as ISequentialStream, _ULARGE_INTEGER etc. are still part of the Interop.\nAs it is very annoying and confusing have multiple unsused IStream or other type definitions around it would be a nice feature to be able to suppress some types from going into the Interop.",
+    "LastUpdatedDate": "2013-02-21T15:53:14.89-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2009-09-09T04:53:54.07-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "TlbImp: Suppress types from being imported",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 4231
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

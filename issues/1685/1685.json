@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Tool doesn't consider LCIDConversionAttribute applied on managed pinvoke signature and generates wrong native signature when managed signature has this attribute applied.",
+    "LastUpdatedDate": "2017-11-27T18:42:26.433-08:00",
+    "PlannedForRelease": "PInvoke Interop Assistant",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2008-07-11T14:38:21.37-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Tool ignore LCIDCOnversionAttribute",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1685
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

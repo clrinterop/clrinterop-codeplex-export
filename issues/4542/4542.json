@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In navigation panel, Prev Block/Next Block should not wrap to the end/beginning because people might want to go back to the beginning and walk through the code again. In this scenario, they would click prev block again and again and find them accidentally get “wrapped” to the last block again. Either Prev Block/Next block should not wrap, or you can provide a first block/end block instead.",
+    "LastUpdatedDate": "2013-02-21T15:53:14.073-08:00",
+    "PlannedForRelease": "IL Stub Diagnostics Tool",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "clrinterop",
+    "ReportedDate": "2009-10-21T23:37:02.403-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "IL Stub Diagnostics: Home/End navigator button",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 0,
+    "Id": 4542
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

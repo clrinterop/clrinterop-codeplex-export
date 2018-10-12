@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1203258",
+    "ThreadId": "529090",
+    "Html": "Hi. Found the PInvoke Interop Assistant while noodling around. I installed it, but haven't figured out how to feed it unmanaged C/C++ to generate C# PInvoke declarations.\r<br />\n<br />\nThanks,\r<br />\nChris<br />\n",
+    "PostedDate": "2014-02-05T16:38:08.47-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1225209",
+    "ThreadId": "529090",
+    "Html": "I need example<br />\n",
+    "PostedDate": "2014-03-21T06:35:27.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

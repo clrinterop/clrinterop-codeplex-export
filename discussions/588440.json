@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1367538",
+    "ThreadId": "588440",
+    "Html": "Hi,\r<br />\n<br />\nI developed an application that allows a remote PC to connect to it. I use standard sockets asynchronously. When connxions client, I realize that my listener is firstly in &quot;Established&quot; with his client and at the same time remains in &quot;listenning.&quot; This situation means that when the client socket is cut, it also carries the listening socket. Is this normal? Is there a way to keep the listening socket always open in &quot;listenning&quot; and connect the client socket on a port, as with VB6?\r<br />\n<br />\nThx.<br />\n",
+    "PostedDate": "2015-03-20T07:23:47.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

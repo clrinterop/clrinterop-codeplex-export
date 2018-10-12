@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "618074",
+    "ThreadId": "258965",
+    "Html": "\r\n<p>In my header file I have definitions like</p>\r\n<pre style=\"font-family:Consolas; background:white; color:black; font-size:13px\"><span style=\"color:green\">/*Location&nbsp;connection&nbsp;handle&nbsp;*/</span>\r\n<span style=\"color:blue\">typedef</span>&nbsp;<span style=\"color:blue\">void</span>&nbsp;*tLocConn;</pre>\r\n<pre style=\"font-family:Consolas; background:white; color:black; font-size:13px\">Which result in the error</pre>\r\n<pre style=\"font-family:Consolas; background:white; color:black; font-size:13px\">Error: Error processing post typedef types for BOOL: Expected token of type ParenClose but found Asterisk instead.</pre>\r\n<pre style=\"font-family:Consolas; background:white; color:black; font-size:13px\">The generated NativeMethods.vb file only contains enums from the header file and no dllimports for functions.</pre>\r\n<pre style=\"font-family:Consolas; background:white; color:black; font-size:13px\">The command line I am using is:</pre>\r\n<pre style=\"font-family:Consolas; background:white; color:black; font-size:13px\">C:\\Program Files\\InteropSignatureToolkit&gt;sigimp /includePath:&quot;C:\\Code\\Shared Projects\\vs2010\\VstCalcTax\\source&quot; vst.h</pre>\r\n<pre style=\"font-family:Consolas; background:white; color:black; font-size:13px\">Am I doing something wrong?</pre>\r\n",
+    "PostedDate": "2011-05-25T07:47:00.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

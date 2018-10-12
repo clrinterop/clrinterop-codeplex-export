@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "545217",
+    "ThreadId": "240797",
+    "Html": "\r\n<p>I find that I can't add this attribute on the interface using the following code:</p>\r\n<p>&lt;Rule Name=&quot;Rule #1&quot; Category=&quot;Type&quot;&gt;&nbsp;&nbsp; &nbsp;&lt;Condition&gt;&nbsp;&nbsp; &nbsp; &nbsp;&lt;And&gt;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&lt;NativeName Operator=&quot;Equal&quot; Value=&quot;IEditingEngine&quot; /&gt;&nbsp;&nbsp; &nbsp; &nbsp;&lt;/And&gt;&nbsp;&nbsp;\r\n &nbsp;&lt;/Condition&gt;&nbsp;&nbsp; &nbsp;&lt;Action Name=&quot;AddAttribute&quot;&gt;&nbsp;&nbsp; &nbsp; &nbsp;&lt;Parameter Key=&quot;AssemblyName&quot; Value=&quot;mscorlib&quot; /&gt;&nbsp;&nbsp; &nbsp; &nbsp;&lt;Parameter Key=&quot;TypeName&quot; Value=&quot;System.Runtime.InteropServices.ComImportAttribute&quot;\r\n /&gt;&nbsp;&nbsp; &nbsp; &nbsp;&lt;Parameter Key=&quot;Constructor&quot; Value=&quot;Void .ctor()&quot; /&gt;&nbsp;&nbsp; &nbsp; &nbsp;&lt;Parameter Key=&quot;Data&quot; Value=&quot;01 00 00 00&quot; /&gt;&nbsp;&nbsp; &nbsp;&lt;/Action&gt;&nbsp;&nbsp;&lt;/Rule&gt;</p>\r\n<p>Is it right?</p>\r\n",
+    "PostedDate": "2011-01-06T22:31:49.023-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
