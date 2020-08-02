@@ -3,7 +3,7 @@
 > Archived data from **clrinterop** project exported from CodePlex.
 
 This repository contains data that was exported from the CodePlex
-website clrinterop.codeplex.com after CodePlex hosting was shutdown.
+website [clrinterop.codeplex.com](https://clrinterop.codeplex.com) after CodePlex hosting was shutdown.
 
 
 ## Archive Content
